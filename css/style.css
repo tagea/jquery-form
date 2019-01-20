@@ -1,0 +1,233 @@
+:root{
+   --color-orange: rgb(255, 121, 32); 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+input, button{
+    outline: none;
+}
+html{
+    font-family: 'Muli', sans-serif;
+    min-height: 100%; 
+    display: flex;
+    flex-flow: column;
+}
+body{
+    flex: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/back.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.profile{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    min-width: 500px;
+    width: 70%;
+}
+.profile__header{
+    padding: 20px;
+    text-align: center;
+}
+.main-h1{
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.main-h1__mark{
+    font-weight: 700;
+}
+.text_under-h1{
+    color: rgb(124, 124, 124);
+}
+.profile__header-list{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.profile__header-item{
+    width: calc(100%/3);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 12px 0;
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+}
+.profile__header-item:hover{
+    opacity: 0.7;
+}
+.profile__header-item_active{
+    background-color: var(--color-orange);
+}
+.profile__header-item_filled{
+    background-color: rgb(40, 73, 70);
+}
+.tab-h2{
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+}
+.profile__tab{
+    display: none;
+    padding: 10px 20px;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 320px;
+    position: relative;
+    
+}
+.profile__tab:nth-child(1){
+    display: flex;
+}
+.tab-inline{
+    display: flex;
+    flex-flow: row wrap;
+}
+.profile__pics{
+    width: 30%;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;align-items: center;
+    padding-top: 10px;
+}
+.profile__img{
+    width: 100px;
+    height: auto;
+}
+.profile__pics-choose,
+.profile__pics-name{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.profile__pics-name{
+    font-weight: 300;
+}
+.profile__form{
+    width: 70%;
+}
+.profile__form-group{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+.profile__form-group_inline{
+    flex-flow: row;
+    align-items: center;
+}
+.profile__form-group_inline input[type='checkbox']{
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+.profile__form-group label{
+    font-weight: 700;
+    padding-bottom: 4px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+.profile__form-group input{
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(51, 51, 51);
+    outline: none;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+.valid-input{
+    border:1px solid rgb(91, 173, 157) !important;
+    
+}
+.invalid-input{
+    border:1px solid  rgb(189, 102, 102) !important;
+    
+}
+.profile__form-group input::placeholder{
+    color: rgb(214, 214, 214);
+}
+.list-load{
+    border-left: 1px solid rgb(231, 231, 231);
+    border-right: 1px solid rgb(231, 231, 231);
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top:70px;
+    z-index: 5;
+    background-color: #fff;
+    display: none;
+    flex-flow: column;
+}
+.list-load span{
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    padding:10px;
+    cursor: pointer;
+}
+.list-load span:hover{
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+.profile__next-link,
+.profile__send-link,
+.profile__unsend-link{
+    text-decoration: none;
+    margin-top: 20px;
+    color: #fff;
+    padding: 6px 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border-radius: 5px;
+    font-weight: 300;
+    transition: all 0.1s ease-in;
+}
+.profile__next-link:hover,
+.profile__send-link:hover{
+   box-shadow: 0 0 14px 2px rgb(202, 202, 202); 
+}
+.profile__next-link{
+    background-color: var(--color-orange);
+}
+.profile__send-link{
+    background-color: rgb(62, 102, 85);
+}
+.profile__unsend-link{
+    cursor: auto;
+    background-color: rgb(197, 197, 197);
+}
+.profile__unsend-link:hover{
+    box-shadow: none;
+}
+#tab-about{
+    display:flex;
+}
+#tab-account{
+    display: none;
+}
+#tab-address{
+    display: none;
+}
+.test{
+    background-color: #fff;
+    padding: 30px;
+}
+#dialog p{
+    margin: 6px 0;
+}

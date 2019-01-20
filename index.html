@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Знакомство с jQuery</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div class="profile">
+    <div class="profile__header">
+      <h1 class="main-h1"><span class="main-h1__mark">Build</span> your profile</h1>
+      <p class="text_under-h1">This information will let us know more about you.</p>
+    </div>
+    <div class="profile__tabs">
+      <ul class="profile__header-list">
+        <li class="profile__header-item" data-index="1">About</li>
+        <li class="profile__header-item" data-index="2">Account</li>
+        <li class="profile__header-item" data-index="3">Address</li>
+      </ul>
+      <div class="profile__tab">
+        <h2 class="tab-h2">Let's start with the basic information</h2>
+        <div class="tab-inline">
+          <div class="profile__pics">
+            <img src="img/user-01.svg" class="profile__img">
+            <span class="profile__pics-choose">Choose picture</span>
+          </div>
+          <div class="profile__form">
+            <form action="#" method="POST">
+              <div class="profile__form-group profile__form-group_inline">
+                <div class="profile__form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name='user-first-name' placeholder="Andrew..." autocomplete="off">
+                </div>
+                <span>&nbsp;</span>
+                <div class="profile__form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="user-last-name" placeholder="Smith..." autocomplete="off">
+                </div>
+              </div>
+              <div class="profile__form-group">
+                <label for="data">Birth date</label>
+                <input type="text" id="data" name="user-datebirth" placeholder="01.08.2018" autocomplete="off">
+              </div>
+              <div class="profile__form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user-email" placeholder="andrew@creative-tim.com" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+        <a href="#" class="profile__next-link">Next</a>
+      </div>
+      <div class="profile__tab">
+        <h2 class="tab-h2">And continue with account profile</h2>
+        <div class="tab-inline">
+          <div class="profile__pics">
+            <img src="img/user-01.svg" class="profile__img">
+            <span class="profile__pics-name">Andrew Smith</span>
+          </div>
+          <div class="profile__form">
+            <form action="#" method="POST">
+              <div class="profile__form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" name='user-login' placeholder="adrew95..." autocomplete="off">
+              </div>
+              <div class="profile__form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="user-password" placeholder="****">
+              </div>
+              <div class="profile__form-group profile__form-group_inline">
+                <label for="news">Subscribe to news</label>
+                <input type="checkbox" id="news" name="user-subscribe" checked>
+              </div>
+            </form>
+          </div>
+        </div>
+        <a href="#" class="profile__next-link">Next</a>
+      </div>
+      <div class="profile__tab">
+        <h2 class="tab-h2">The last one fill the address</h2>
+        <div class="tab-inline">
+          <div class="profile__pics">
+            <img src="img/user-01.svg" class="profile__img">
+            <span class="profile__pics-name">Andrew Smith</span>
+          </div>
+          <div class="profile__form">
+            <form action="#" method="POST">
+              <div class="profile__form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name='user-country' placeholder="United States" autocomplete="off">
+              </div>
+              <div class="profile__form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user-city" placeholder="Chicago" autocomplete="off">
+              </div>
+              
+              <div class="profile__form-group">
+                <label for="street">Street</label>
+                <input type="text" id="street" name="user-street">
+              </div>
+            </form>
+          </div>
+        </div>
+        <a href="#" class="profile__unsend-link">Build</a>
+      </div>
+    </div>
+   <div id="dialog" title="Check">
+   </div>
+  </div>
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
